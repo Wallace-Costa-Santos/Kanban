@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta Alien -->
+    <color name="verdeelegante">#0F5132</color>
+    <color name="verdeescuro">#0A3824</color>
+    <color name="verdemedio">#176B45</color>
+    <color name="verdealien">#55D68B</color>
+    <color name="verdemint">#A5F3C5</color>
+
+    <!-- Textos -->
+    <color name="grey2">#A9C5B5</color>
+</resources>
