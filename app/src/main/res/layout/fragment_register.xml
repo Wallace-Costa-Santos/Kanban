@@ -10,80 +10,110 @@
     tools:context=".ui.auth.RegisterFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="25dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <!-- E-mail -->
-        <TextView
-            android:layout_width="wrap_content"
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-mail"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:paddingTop="40dp"
+            app:navigationIcon="@drawable/ic_back">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="Digite seu e-mail"
-            android:textColor="@color/white"
-            android:textColorHint="@color/grey2"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/bg_edit_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criar conta"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"/>
 
-        <!-- Senha -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Senha"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"/>
+        </com.google.android.material.appbar.MaterialToolbar>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="Digite sua senha"
-            android:textColor="@color/white"
-            android:textColorHint="@color/grey2"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/bg_edit_text"/>
-
-        <!-- Botão Enviar -->
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="ENVIAR"
-            android:textColor="@color/verdeescuro"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:letterSpacing="0.08"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_btn"
-            app:backgroundTint="@null"
-            app:cornerRadius="12dp"/>
-
-        <!-- Espaço para outros elementos, se necessário -->
         <LinearLayout
+            android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp"/>
+            android:orientation="vertical"
+            android:layout_marginHorizontal="25dp">
 
-        <!-- Carregamento -->
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminateTint="@color/verdealien"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"/>
+            <!-- E-mail -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Digite seu e-mail"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey2"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <!-- Senha -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senha"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Digite sua senha"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey2"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <!-- Botão Enviar -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="ENVIAR"
+                android:textColor="@color/verdeescuro"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:letterSpacing="0.08"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_btn"
+                app:backgroundTint="@null"
+                app:cornerRadius="12dp"/>
+
+            <!-- Espaço para outros componentes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+            </LinearLayout>
+
+            <!-- Carregamento -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/verdealien"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
