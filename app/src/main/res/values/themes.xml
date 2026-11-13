@@ -1,20 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Tema principal do aplicativo -->
     <style name="Base.Theme.Task" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <!-- Cor principal -->
+        <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/verdeelegante</item>
-
-        <!-- Variação da cor principal -->
-        <item name="colorPrimaryVariant">@color/verdeescuro</item>
-
-        <!-- Cor de fundo -->
-        <item name="android:background">@color/verdeelegante</item>
+        <item name="colorPrimaryVariant">@color/verdeelegante</item> -->
         <item name="android:windowBackground">@color/verdeelegante</item>
 
     </style>
+    <style name="Theme.Task" parent="Base.Theme.Task"/>
 
-    <style name="Theme.Task" parent="Base.Theme.Task" />
-
+    <style name="CustomTabLayout" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
